@@ -1,0 +1,14 @@
+For Windows Operating System:
+
+"C:\\directory\\subdirectory\\folder\\filename"
+
+You must use two backslashes as a single slash is a character literal
+thus, you must use two backslashes.
+
+For Linux/Mac/UNIX Operating Systems:
+
+"/directory/subdirectory/folder/filename"
+
+This also works with windows as the correct separator
+replaces the forward slash behind the scenes.
+

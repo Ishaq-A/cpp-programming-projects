@@ -1,0 +1,27 @@
+#include <iostream>
+#include <fstream>
+
+int main() {
+    std::fstream in_file;
+
+    in_file.open("data.txt");
+
+    if(!in_file) {
+        std::cerr << "Error opening file" << std::endl;
+        return 1;
+    }
+
+    char c {};
+
+    while(in_file.get(c)) {
+        std::cout << c;
+    }
+
+    std::cout << std::endl;
+
+    in_file.close();
+    
+    std::cout << std::endl;
+    return 0;
+}
+
